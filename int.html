@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<style>
+    div {
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+#myDiv {
+    }
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+        animation: mymove. .05s linear infinite;
+    }
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {right: 900px;}
+    10%{
+         transform: rotate(40deg);
+    }
+    20%{
+         transform: rotate(80deg);
+    }
+    30%{
+         transform: rotate(120deg);
+    }
+    40%{
+         transform: rotate(180deg);
+    }
+    50%{
+         transform: rotate(200deg);
+    }
+     100%{
+        transform: rotate(360deg);
+        transform: rotateZ(3600deg);
+    }
+    from{right: 900px;}
+    to {left: 0px;}
+
+}
+
+}
+</style>
+<body>
+    <div id="myDiv">
+        <img src="Epic_sax_guy.gif" alt="im" />
+    </div>
+    <script src="int.js"></script>
+</body>
+</html>
