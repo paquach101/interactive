@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html>
-<style>
-    div {
-    position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
-}
-#myDiv {
-    }
-    .center{
-        margin-left: auto;
-        margin-right: auto;
-        animation: mymove. .05s linear infinite;
-    }
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .invert {
+            -webkit-filter: invert(100%);
+            filter: invert(100%);
+        }
+        .grayscale{
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
 
-@keyframes mymove {
-    from {left: 0px;}
-    to {right: 900px;}
-    10%{
-         transform: rotate(40deg);
-    }
-    20%{
-         transform: rotate(80deg);
-    }
-    30%{
-         transform: rotate(120deg);
-    }
-    40%{
-         transform: rotate(180deg);
-    }
-    50%{
-         transform: rotate(200deg);
-    }
-     100%{
-        transform: rotate(360deg);
-        transform: rotateZ(3600deg);
-    }
-    from{right: 900px;}
-    to {left: 0px;}
+        #myDiv {
+            position: relative;
+            animation: mymove 10s infinite;
+        }
+        #myDiv2{
+            position:absolute;
+            animation: mymove 5s infinite
+        }
 
-}
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            animation: mymove. .05s linear infinite;
+        }
 
-}
-</style>
+        @keyframes mymove {
+            from {
+                left: 900px;
+            }
+            to {
+                left: 0px;
+            }
+            10%{
+                transform: rotate(380deg);
+            }
+        }
+    </style>
+</head>
+
 <body>
+    <audio controls>
+        <source src="Sax_music.mp3" type= "audio/mpeg">
+    </audio>
     <div id="myDiv">
-        <img src="Epic_sax_guy.gif" alt="im" />
+        <img class="invert" src="Epic_sax_guy.gif" alt="im" width="300" height="300">
     </div>
+    <div id="myDiv2">
+        <img class="grayscale" src="Epic_sax_guy.gif">
+    </div>
+    <select onchange="myFunction(this);" size="5">
+  <option>0
+  <option>0.2
+  <option>0.5
+  <option>0.8
+  <option selected="selected">1
+</select>
     <script src="int.js"></script>
 </body>
 </html>
