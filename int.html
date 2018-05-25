@@ -32,7 +32,7 @@
             position: absolute;
             bottom: 50px;
             display: block;
-            margin-left: auto;
+            margin-left: 50%;
             margin-right: 50%;
             animation: mymove3 5s infinite;
         }
@@ -81,36 +81,87 @@
 
         @keyframes mymove3 {
             0% {
+                right: 0px;
+                opacity: 1;
+            }
+            5%{
+                right: 100px;
                 opacity: 1;
             }
             10% {
+                right: 200px;
+                opacity: .8;
+            }
+            15%{
+                right: 300px;
                 opacity: .8;
             }
             20% {
+                right: 400px;
+                opacity: .5;
+            }
+            25%{
+                right: 500px;
                 opacity: .5;
             }
             30% {
+                right: 600px;
+                opacity: .2;
+            }
+            35%{
+                right: 700px;
                 opacity: .2;
             }
             40% {
+                right: 800px;
+                opacity: 0;
+            }
+            45%{
+                right: 900px;
                 opacity: 0;
             }
             50% {
+                right: 1000px
+                opacity: .2;
+            }
+            55%{
+                right: 900px;
                 opacity: .2;
             }
             60% {
+                right: 800px;
                 opacity: .5;
             }
+            65%{
+                right: 700px;
+                opacity: .2;
+            }
             70% {
+                right: 600px;
                 opacity: .8;
             }
+            75%{
+                right: 500px;
+                opacity: .2;
+            }
             80% {
+                right: 300px;
                 opacity: .9;
             }
+            85%{
+                right: 200px;
+                opacity: .2;
+            }
             90% {
+                right: 100px;
                 opacity: 1;
             }
+            95%{
+                right: 50px;
+                opacity: .2;
+            }
             100% {
+                right: 0px;
                 transform: rotateX(360deg);
             }
 
@@ -136,7 +187,7 @@
         <img class="grayscale" src="Epic_sax_guy.gif">
     </div>
     <div id="myDiv3">
-        <img src="temple.jpg" width="2000" height="2000">
+        <img src="temple.jpg" width="300" height="300">
     </div>
     <div id="myDiv4">
         <img class="invert" src="temple.jpg" width="400" height="400">
